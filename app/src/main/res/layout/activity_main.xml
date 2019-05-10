@@ -9,7 +9,17 @@
     android:background="#fff"
     tools:context=".MainActivity">
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_circle_search"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        />
     <EditText
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -20,7 +30,6 @@
         android:hint="Поиск почты"
         android:drawableLeft="@drawable/ic_hamburger"
         android:drawablePadding="10dp"
-        android:drawableRight="@drawable/ic_icon_circle"
         android:height="40dp"
         android:elevation="2dp"
         android:paddingLeft="10dp"
@@ -43,4 +52,5 @@
         android:letterSpacing="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
